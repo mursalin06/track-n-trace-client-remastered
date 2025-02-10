@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+    font-weight: 600; 
+    color: black;
+    padding-right: 20px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    color: blue;
+}
+/* nav{
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
+
+.hero-custom {
+    min-height: calc(100vh - 64px);
+}
+
+@media (min-width: 768px) {
+    .hero-custom {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-custom {
+        min-height: 500px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-custom {
+        min-height: 600px;
+    }
+}
+
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
