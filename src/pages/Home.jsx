@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import FAQ from "../components/FAQ";
+import LatestItems from "../components/LatestItems";
 import NewsLetter from "../components/NewsLetter";
 import PageTitle from "../components/PageTitle";
 
@@ -12,6 +13,9 @@ const Home = () => {
             <PageTitle title="Home | Track n Trace"></PageTitle>
             <section>
                 <Banner></Banner>
+            </section>
+            <section>
+                <LatestItems></LatestItems>
             </section>
             <section className="bg-base-300">
                 <FAQ></FAQ>

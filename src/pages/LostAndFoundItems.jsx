@@ -24,7 +24,7 @@ const LostAndFoundItems = () => {
             <PageTitle title="Lost n Found items | Track n Trace"></PageTitle>
 
             <div>
-                <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-700 text-center">All Lost and Found Items</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-500 text-center">All Lost and Found Items</h2>
                 <div className="flex justify-center gap-4 my-4">
                     {/* Search Inputs */}
                     <input

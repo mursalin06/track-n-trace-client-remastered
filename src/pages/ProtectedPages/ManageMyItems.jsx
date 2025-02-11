@@ -67,7 +67,7 @@ const ManageMyItems = () => {
             <section >
                 {
                     items.length !== 0 ? <div className="overflow-x-auto md:overflow-hidden rounded-lg w-full flex flex-col min-h-screen ">
-                        <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-700 text-center mb-10">My Items</h2>
+                        <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-500 text-center mb-10">My Items</h2>
                         <table className="table lg:ml-28">
                             {/* head */}
                             <thead>

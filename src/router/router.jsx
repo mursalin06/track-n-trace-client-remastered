@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import PostDetails from "../pages/PostDetails";
 import UpdatePost from "../pages/UpdatePost";
 import Error from "../components/Error";
+import LatestItems from "../components/LatestItems";
 
 const router = createBrowserRouter([
     {
@@ -45,26 +46,26 @@ const router = createBrowserRouter([
     {
         path: '/all-recovered-items',
         element: <PrivateRoute><AllRecoveredItems></AllRecoveredItems></PrivateRoute>,
-        loader: ()=> fetch('https://track-n-trace-server.vercel.app/recovered-items')
+        loader: () => fetch('https://track-n-trace-server.vercel.app/recovered-items')
     },
     {
         path: '/manage-my-items',
         element: <PrivateRoute><ManageMyItems></ManageMyItems></PrivateRoute>,
-        loader: ()=>fetch('https://track-n-trace-server.vercel.app/all-items')
+        loader: () => fetch('https://track-n-trace-server.vercel.app/all-items')
     },
     {
-        path:'/item/:id',
-        element:<PrivateRoute><PostDetails></PostDetails></PrivateRoute>,
-        loader: ({params})=> fetch(`https://track-n-trace-server.vercel.app/all-items/${params.id}`)
+        path: '/item/:id',
+        element: <PrivateRoute><PostDetails></PostDetails></PrivateRoute>,
+        loader: ({ params }) => fetch(`https://track-n-trace-server.vercel.app/all-items/${params.id}`)
     },
     {
-        path:'/updateItems/:id',
+        path: '/updateItems/:id',
         element: <PrivateRoute><UpdatePost></UpdatePost></PrivateRoute>,
-        loader: ({params})=> fetch(`https://track-n-trace-server.vercel.app/all-items/${params.id}`)
+        loader: ({ params }) => fetch(`https://track-n-trace-server.vercel.app/all-items/${params.id}`)
     },
     {
-        path:'*',
-        element:<Error></Error>
+        path: '*',
+        element: <Error></Error>
     }
 ]);
 

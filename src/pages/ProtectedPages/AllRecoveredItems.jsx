@@ -15,7 +15,7 @@ const AllRecoveredItems = () => {
             </nav>
             <section>
                 {recoveredItems.length > 0 ?<div className="overflow-x-auto md:overflow-hidden rounded-lg w-full flex flex-col min-h-screen ">
-                    <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-700 text-center mb-10">All recovered items</h2>
+                    <h2 className="text-2xl md:text-4xl font-bold mt-6 text-blue-500 text-center mb-10">All recovered items</h2>
                     <table className="table lg:ml-28">
                         {/* head */}
                         <thead>
@@ -35,7 +35,7 @@ const AllRecoveredItems = () => {
                                             <div className="avatar">
                                                 <div className="mask  h-12 w-12">
                                                     <img
-                                                        src={recoveredItem.recoveredBy.image}
+                                                        src={recoveredItem.recoveredBy?.image }
                                                         alt="Avatar Tailwind CSS Component" />
                                                 </div>
                                             </div>
