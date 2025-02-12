@@ -30,7 +30,7 @@ const LatestItems = () => {
         }
     };
     return (
-        <div className="md:h-[600px] md:flex md:justify-center my-12 md:flex-col">
+        <div className="md:h-[600px] border md:flex md:justify-center my-12 md:flex-col">
             <h3 className="text-2xl md:text-4xl font-semibold text-blue-500 text-center" >Latest Items</h3>
 
             <section>

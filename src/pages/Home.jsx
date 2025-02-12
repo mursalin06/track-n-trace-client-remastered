@@ -3,6 +3,7 @@ import FAQ from "../components/FAQ";
 import LatestItems from "../components/LatestItems";
 import NewsLetter from "../components/NewsLetter";
 import PageTitle from "../components/PageTitle";
+import Reviews from "../components/Reviews";
 
 const Home = () => {
     return (
@@ -16,6 +17,9 @@ const Home = () => {
             </section>
             <section>
                 <LatestItems></LatestItems>
+            </section>
+            <section>
+                <Reviews></Reviews>
             </section>
             <section className="bg-base-300">
                 <FAQ></FAQ>

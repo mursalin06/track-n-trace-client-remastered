@@ -6,7 +6,7 @@ const AllItemsCard = ({ item, user }) => {
     const navigate = useNavigate();
     const { _id, thumbnail, title, location, category, postType, status, formattedDate } = item;
     // console.log(item)
-    const handleViewDetails = () => {
+    const handleViewDetails = (_id) => {
         if (!user) {
             setLoading(true);
             navigate('/login', { replace: true });
@@ -24,7 +24,7 @@ const AllItemsCard = ({ item, user }) => {
                         src={thumbnail} />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">Title :  {title}</h2>
+                    <h2 className="card-title"> {title}</h2>
                     <div className="flex justify-between ">
                         <div>
                             <p>Location :  {location}</p>
@@ -36,7 +36,7 @@ const AllItemsCard = ({ item, user }) => {
                         </div>
                     </div>
                     <div className="card-actions items-center gap-20">
-                        <button onClick={handleViewDetails} className="btn btn-primary btn-sm">
+                        <button onClick={()=>handleViewDetails(_id)} className="btn btn-primary btn-sm">
                             View Details
                         </button>
                         <p><span className="text-md font-bold">Status :  </span>{status === "recovered" ? "recovered" : "not recovered yet"}</p>
