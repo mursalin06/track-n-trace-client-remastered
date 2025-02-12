@@ -41,7 +41,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/add-items',
-        element: <PrivateRoute><AddLostAndFoundItem></AddLostAndFoundItem></PrivateRoute>
+        element: <AddLostAndFoundItem></AddLostAndFoundItem>
     },
     {
         path: '/all-recovered-items',

@@ -4,7 +4,8 @@ import AuthContext from "../context/AuthContext";
 const AllItemsCard = ({ item, user }) => {
     const {setLoading} = useContext(AuthContext)
     const navigate = useNavigate();
-    const { _id, thumbnail, title, location, category, postType, status } = item;
+    const { _id, thumbnail, title, location, category, postType, status, formattedDate } = item;
+    // console.log(item)
     const handleViewDetails = () => {
         if (!user) {
             setLoading(true);
@@ -28,6 +29,7 @@ const AllItemsCard = ({ item, user }) => {
                         <div>
                             <p>Location :  {location}</p>
                             <p>Item Category :  {category}</p>
+                            <p>Date :  {formattedDate}</p>
                         </div>
                         <div>
                             <div className="badge badge-outline">{postType}</div>
