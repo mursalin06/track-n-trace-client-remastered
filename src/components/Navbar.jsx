@@ -16,9 +16,9 @@ const Navbar = () => {
                 });
             })
             .catch((err) => {
-                console.error(err, "error while logging out");
+                console.error(err, "Error while logging out");
                 Swal.fire({
-                    title: "Alas!",
+                    title: "Oops!",
                     text: "Failed to log out",
                     icon: "error"
                 });
@@ -51,11 +51,11 @@ const Navbar = () => {
                             <NavLink to="/lost-and-found-items" className="nav-link">
                                 <li>Lost and Found Items</li>
                             </NavLink>
+                            <NavLink to="/add-items" className="nav-link">
+                                <li>Add Item</li>
+                            </NavLink>
                             {user && (
                                 <>
-                                    <NavLink to="/add-items" className="nav-link">
-                                        <li>Add Item</li>
-                                    </NavLink>
                                     <NavLink to="/all-recovered-items" className="nav-link">
                                         <li>Recovered Items</li>
                                     </NavLink>
@@ -79,11 +79,11 @@ const Navbar = () => {
                         <NavLink to="/lost-and-found-items" className="nav-link">
                             <li>Lost and Found Items</li>
                         </NavLink>
+                        <NavLink to="/add-items" className="nav-link">
+                            <li>Add Item</li>
+                        </NavLink>
                         {user && (
                             <>
-                                <NavLink to="/add-items" className="nav-link">
-                                    <li>Add Item</li>
-                                </NavLink>
                                 <NavLink to="/all-recovered-items" className="nav-link">
                                     <li>Recovered Items</li>
                                 </NavLink>
@@ -108,9 +108,6 @@ const Navbar = () => {
                                     </span>
                                 </label>
                                 <ul tabIndex={0} className="dropdown-content menu pl-6 py-6 space-y-5 shadow bg-base-100 rounded-box w-56">
-                                    <NavLink to="/add-items" className="nav-link">
-                                        <li>Add Lost and Found Item</li>
-                                    </NavLink>
                                     <NavLink to="/all-recovered-items" className="nav-link">
                                         <li>All Recovered Items</li>
                                     </NavLink>
