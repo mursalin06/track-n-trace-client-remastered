@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 import DatePicker from "react-datepicker";
 import PageTitle from "../components/PageTitle";
+import "react-datepicker/dist/react-datepicker.css";
 
 const PostDetails = () => {
     const { user } = useContext(AuthContext);

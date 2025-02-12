@@ -13,25 +13,25 @@ const reviews = [
   {
     title: "Got my iPhone back safely!",
     rating: 5,
-    text: "I never thought I’d see my iPhone 12 again after losing it in Uttara. Thankfully, someone found it and listed it on this site. The process to claim it was smooth, and I really appreciate the honesty of the person who returned it!",
+    text: "Losing my iPhone 12 in Uttara was stressful, but thanks to this site, I got it back! The process was smooth, and I’m grateful to the kind person who returned it.",
     author: "Rahim A.",
   },
   {
-    title: "My sunglasses are back where they belong!",
+    title: "My sunglasses are back!",
     rating: 5,
-    text: "I lost my favorite black sunglasses in Mirpur, and I had given up hope. But when I checked this website, I saw that someone had found them! The verification process was easy. Great service!",
+    text: "I thought my black sunglasses were gone forever after losing them in Mirpur. Thankfully, someone found and listed them here. The process was super easy!",
     author: "Sadia K.",
   },
   {
     title: "Relieved to find my helmet!",
     rating: 5,
-    text: "I left my red motorbike helmet near Dhaka University and thought I’d have to buy a new one. Luckily, someone found it and posted it here. I got it back within a few days. This website is a game-changer!",
+    text: "I left my red motorbike helmet near Dhaka University and thought it was lost for good. Luckily, someone posted it here, and I got it back within days!",
     author: "Tarek H.",
   },
   {
     title: "Didn’t expect to see my diary again!",
     rating: 5,
-    text: "Losing my red diary at Mohakhali Bus Stand was heartbreaking because it had personal notes and memories. But thanks to this site, I got it back! Huge thanks to the kind person who found it and listed it here.",
+    text: "Losing my red diary at Mohakhali Bus Stand was upsetting, but thanks to this site, I was reunited with it. Huge thanks to the honest person who listed it!",
     author: "Nusrat J.",
   },
 ];
@@ -67,7 +67,7 @@ const Reviews = () => {
         {reviews.map((review, index) => (
           <SwiperSlide
             key={index}
-            className="bg-[#e6e6e6] p-6 max-h-[300px] md:shadow-2xl rounded-lg border w-full max-w-md mx-auto"
+            className="bg-[#e6e6e6] p-6 rounded-lg border w-full max-w-md mx-auto"
           >
             <h3 className="text-xl text-center font-semibold">
               <q>{review.title}</q>

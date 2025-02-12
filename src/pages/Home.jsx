@@ -15,16 +15,16 @@ const Home = () => {
             <section>
                 <Banner></Banner>
             </section>
-            <section>
+            <section className="bg-[#e6e6e6]">
                 <LatestItems></LatestItems>
             </section>
             <section>
                 <Reviews></Reviews>
             </section>
-            <section className="bg-base-300">
+            <section className="bg-base-300 px-4 md:px-0">
                 <FAQ></FAQ>
             </section>
-            <section>
+            <section className="mx-4 ">
                 <NewsLetter></NewsLetter>
             </section>
         </div>
